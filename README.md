@@ -34,14 +34,7 @@
 
 ---
 
-## 🖼️ Screenshots
-<p align="left">
-  <img src="assets/screens/onboarding-1.png" width="240" />
-  <img src="assets/screens/onboarding-2.png" width="240" />
-  <img src="assets/screens/home.png" width="240" />
-</p>
 
-> Put your images into `assets/screens/` and update paths above.
 
 ---
 
@@ -67,9 +60,8 @@
 import { Client, Account, Databases } from "react-native-appwrite";
 
 const client = new Client()
-  .setEndpoint("https://cloud.appwrite.io/v1")  // your endpoint
-  .setProject("APPWRITE_PROJECT_ID")            // from Appwrite console
-  .setPlatform("YOUR_BUNDLE_ID_OR_PACKAGE");    // e.g., com.localloop.app
-
+  .setEndpoint("https://cloud.appwrite.io/v1")  
+  .setProject("68d3bb820034735d51cc")            
+  .setPlatform("com.company.akalanka");   
 export const account = new Account(client);
 export const db = new Databases(client);
